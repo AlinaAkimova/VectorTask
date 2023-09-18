@@ -1,0 +1,15 @@
+.tableContainer {
+    display: flex;
+    align-items: center;
+
+    table,
+    td {
+        background-color: #DCDCDC;
+        border: 1 solid #DCDCDC;
+        cursor: pointer;
+    }
+
+    thead {
+        background-color: #FFFFFF;
+    }
+}
