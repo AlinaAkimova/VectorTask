@@ -1,9 +1,9 @@
 .containerMain {
   display: flex;
-  height: 100%;
+  flex-direction: column;
 
-  section {
-    display: block;
-    width: 100%;
+  .containerChildren {
+    display: flex;
+    justify-content: space-between;
   }
 }

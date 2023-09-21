@@ -8,7 +8,6 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 
 // Stores
 import peopleStore from "store/PeopleStore";
@@ -25,7 +24,10 @@ const PeopleList: FC = observer(() => {
   }, [loadPeople]);
 
   return (
-    <TableContainer component={Paper} className={classes.tableContainer}>
+    <TableContainer
+      className={classes.tableContainer}
+      sx={{ width: "90%", height: "auto" }}
+    >
       <Table aria-label="simple table" className={classes.table}>
         <TableHead>
           <TableRow>
@@ -60,10 +62,10 @@ const PeopleList: FC = observer(() => {
               }}
             >
               <TableCell align="center" className={classes.typography}>
-                {row.number}
+                {row.id}
               </TableCell>
               <TableCell align="center" className={classes.typography}>
-                {row.name}
+                {row.firstName}
               </TableCell>
               <TableCell align="center" className={classes.typography}>
                 {row.status ? "Оплачено" : "Не оплачено"}

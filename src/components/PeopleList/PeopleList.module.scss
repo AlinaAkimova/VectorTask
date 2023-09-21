@@ -10,13 +10,14 @@
   }
 
   .tableCellHead {
-    background-color: $color-grey-extra-light;
     font-family: "Montserrat", sans-serif !important;
     white-space: nowrap;
     font-weight: normal;
   }
 
   .tableRow {
+    background-color: $color-grey-extra-light;
+    border: 4px solid $color-white;
     cursor: pointer;
   }
 

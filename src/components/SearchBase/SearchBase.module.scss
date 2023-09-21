@@ -2,9 +2,17 @@
 
 .pageNameAndSearch {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin-bottom: 30px;
+
+  button {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 10px;
+    margin-right: 9px;
+    margin-left: 10px;
+  }
 
   .searchBase {
     display: flex;
@@ -12,6 +20,8 @@
     align-items: center;
     justify-content: space-between;
     width: 40%;
+    margin-right: 9px;
+    margin-left: 10px;
 
     .openBase {
       border: 1px solid $color-grey-1;
@@ -27,24 +37,6 @@
     input {
       font-family: "Montserrat", sans-serif !important;
       font-weight: normal;
-    }
-
-    .selects {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-
-      .select {
-        border: 1px solid $color-grey-1;
-        border-radius: 6px;
-        width: 180px;
-        margin-left: 7px;
-
-        ::placeholder {
-          font-family: "Montserrat", sans-serif !important;
-          font-weight: normal;
-        }
-      }
     }
   }
 }

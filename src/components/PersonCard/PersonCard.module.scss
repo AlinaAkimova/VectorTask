@@ -1,19 +1,15 @@
-section {
-  display: flex;
-  align-items: center;
-}
-
-p {
-  margin-right: 10px;
-}
-
-h3 {
-  margin-right: 10px;
+article {
+  width: 100%;
 }
 
 .textInfo {
   display: flex;
   justify-content: space-around;
+
+  .contractInfo {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 img {

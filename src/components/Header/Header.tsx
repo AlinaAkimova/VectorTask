@@ -9,7 +9,7 @@ import classes from './Header.module.scss';
 const Header: FC = () => {
   return (
       <Toolbar className={classes.toolbar}>
-        <p>Akimova Alina</p>
+        <p>Admin Alina</p>
         <Avatar>AA</Avatar>
       </Toolbar>
   );

@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 // Components
 import Header from "components/Header/Header";
 import SideMenu from "components/SideMenu/SideMenu";
+import SearchBase from "components/SearchBase/SearchBase";
 
 // Styles
 import classes from "./MainLayout.module.scss";
@@ -16,9 +17,10 @@ interface IProps {
 const MainLayout: FC<IProps> = ({ children }) => {
   return (
     <Box className={classes.containerMain}>
-      <SideMenu />
-      <section>
-        <Header />
+      <Header />
+      <SearchBase />
+      <section className={classes.containerChildren}>
+        <SideMenu />
         {children}
       </section>
     </Box>
