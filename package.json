@@ -12,9 +12,11 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.9",
     "@sentry/vite-plugin": "^2.7.1",
     "axios": "^1.5.0",
+    "lodash.debounce": "^4.0.8",
     "mobx": "^6.10.2",
     "mobx-react-lite": "^4.0.4",
     "react": "^18.2.0",
@@ -25,6 +27,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

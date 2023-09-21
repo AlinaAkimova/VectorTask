@@ -1,24 +1,24 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "src/styles/_variable.scss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
 }
 
 body {
-  margin: 40px;
-  place-items: start;
-  min-width: 320px;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  min-height: 100%;
 }
 
 @media (prefers-color-scheme: light) {

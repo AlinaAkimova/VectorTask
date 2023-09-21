@@ -1,15 +1,27 @@
+@import "src/styles/_variable.scss";
+
 .tableContainer {
-    display: flex;
-    align-items: center;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid $color-grey-1;
+  background-color: $color-white;
 
-    table,
-    td {
-        background-color: #DCDCDC;
-        border: 1 solid #DCDCDC;
-        cursor: pointer;
-    }
+  .table {
+    overflow: hidden;
+  }
 
-    thead {
-        background-color: #FFFFFF;
-    }
+  .tableCellHead {
+    background-color: $color-grey-extra-light;
+    font-family: "Montserrat", sans-serif !important;
+    white-space: nowrap;
+    font-weight: normal;
+  }
+
+  .tableRow {
+    cursor: pointer;
+  }
+
+  .typography {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: normal;
+  }
 }
